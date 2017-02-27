@@ -1,0 +1,488 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+#document {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* base styles */
+.comment {
+  color: #808080;
+  font-style: italic;
+}
+
+.error {
+  color: #ff0000;
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+}
+
+.escape {
+  color: #008080;
+}
+
+.function {
+  color: #0000c0;
+  font-weight: bold;
+}
+
+.keyword {
+  font-weight: bold;
+}
+
+.string {
+  color: #c00000;
+}
+
+.value {
+  color: #808000;
+}
+
+.variable {
+  color: #0000ff;
+}
+
+/* mode: html */
+span.html-attribute {
+  
+}
+
+span.html-comment {
+  
+}
+
+span.html-entityref {
+  
+}
+
+span.html-lilypondtag {
+  
+}
+
+span.html-string {
+  
+}
+
+span.html-tag {
+  
+}
+
+span.html-value {
+  
+}
+
+/* mode: lilypond */
+span.lilypond-accidental {
+  
+}
+
+span.lilypond-articulation {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-beam {
+  
+}
+
+span.lilypond-check {
+  
+}
+
+span.lilypond-chord {
+  
+}
+
+span.lilypond-command {
+  
+}
+
+span.lilypond-comment {
+  
+}
+
+span.lilypond-context {
+  font-weight: bold;
+}
+
+span.lilypond-delimiter {
+  
+}
+
+span.lilypond-duration {
+  color: #008080;
+}
+
+span.lilypond-dynamic {
+  color: #ff8000;
+  font-weight: bold;
+}
+
+span.lilypond-error {
+  
+}
+
+span.lilypond-figbass {
+  
+}
+
+span.lilypond-figbmodif {
+  
+}
+
+span.lilypond-figbstep {
+  
+}
+
+span.lilypond-fingering {
+  color: #ff8000;
+}
+
+span.lilypond-grob {
+  color: #c000c0;
+}
+
+span.lilypond-keyword {
+  
+}
+
+span.lilypond-lyricmode {
+  color: #006000;
+}
+
+span.lilypond-lyrictext {
+  color: #006000;
+}
+
+span.lilypond-markup {
+  color: #008000;
+  font-weight: normal;
+}
+
+span.lilypond-octave {
+  
+}
+
+span.lilypond-pitch {
+  
+}
+
+span.lilypond-property {
+  
+}
+
+span.lilypond-repeat {
+  
+}
+
+span.lilypond-slur {
+  font-weight: bold;
+}
+
+span.lilypond-specifier {
+  
+}
+
+span.lilypond-string {
+  
+}
+
+span.lilypond-stringescape {
+  
+}
+
+span.lilypond-stringnumber {
+  color: #ff8000;
+}
+
+span.lilypond-usercommand {
+  
+}
+
+span.lilypond-uservariable {
+  
+}
+
+span.lilypond-value {
+  
+}
+
+span.lilypond-variable {
+  
+}
+
+/* mode: scheme */
+span.scheme-comment {
+  
+}
+
+span.scheme-constant {
+  
+}
+
+span.scheme-delimiter {
+  
+}
+
+span.scheme-function {
+  
+}
+
+span.scheme-keyword {
+  
+}
+
+span.scheme-lilypond {
+  
+}
+
+span.scheme-number {
+  
+}
+
+span.scheme-scheme {
+  
+}
+
+span.scheme-string {
+  
+}
+
+span.scheme-variable {
+  
+}
+
+/* mode: texinfo */
+span.texinfo-attribute {
+  
+}
+
+span.texinfo-block {
+  
+}
+
+span.texinfo-comment {
+  
+}
+
+span.texinfo-escapechar {
+  
+}
+
+span.texinfo-keyword {
+  
+}
+
+span.texinfo-verbatim {
+  
+}
+
+</style>
+</head>
+<body>
+<pre id="document"><span class="lilypond-keyword keyword">\version</span> <span class="lilypond-string string">"2.18.2"
+</span><span class="lilypond-keyword keyword">\language</span> <span class="lilypond-string string">"italiano"
+
+</span><span class="lilypond-keyword keyword">\header</span> <span class="lilypond-delimiter keyword">{
+   </span><span class="lilypond-variable variable">title</span> = <span class="lilypond-string string">"Pópule meus"
+  </span><span class="lilypond-variable variable">subtitle</span> = <span class="lilypond-string string">"Pour la fonction liturgique solennelle du Vendredi Saint"
+  </span><span class="lilypond-variable variable">composer</span> = <span class="lilypond-string string">"Abbé Jean Robin († 2002)"
+  </span><span class="lilypond-variable variable">arranger</span> = <span class="lilypond-string string">"Pâques 1949"
+  </span><span class="lilypond-comment comment">% Supprimer le pied de page par défaut
+  </span><span class="lilypond-variable variable">tagline</span> = <span class="scheme-scheme">##f
+  </span><span class="lilypond-comment comment">% Supprimer le pied de page par défaut
+  </span><span class="lilypond-variable variable">tagline</span> = <span class="scheme-scheme">##f
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-keyword keyword">\paper</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="scheme-scheme">#</span><span class="scheme-delimiter">(</span><span class="scheme-function function">set-paper-size</span> <span class="scheme-string string">"a5"</span><span class="scheme-delimiter">)
+</span><span class="lilypond-delimiter keyword">}
+</span><span class="lilypond-uservariable">guidon</span> = <span class="lilypond-delimiter keyword">{</span><span class="lilypond-command function">\teeny</span> <span class="lilypond-keyword keyword">\hide</span> <span class="lilypond-context">Staff</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-grob">Stem</span><span class="lilypond-delimiter keyword">}
+</span><span class="lilypond-uservariable">coupe</span> = <span class="lilypond-command function">\bar</span> <span class="lilypond-string string">""
+</span><span class="lilypond-uservariable">guidonoff</span> = <span class="lilypond-keyword keyword">\undo</span> <span class="lilypond-usercommand variable">\guidon
+
+</span><span class="lilypond-uservariable">global</span> = <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\key</span> <span class="lilypond-pitch">do</span> <span class="lilypond-command function">\major
+  \time</span> <span class="lilypond-value value">2/2
+  </span><span class="lilypond-command function">\autoBeamOff
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">soprano</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">do</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-usercommand variable">\global
+  </span><span class="lilypond-comment comment">% En avant la musique !
+  </span><span class="lilypond-pitch">do</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">^</span><span class="lilypond-dynamic">\mf</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi mi</span><span class="lilypond-duration">2</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">mi</span><span class="lilypond-duration">1</span> <span class="lilypond-command function">\breathe</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">mi</span><span class="lilypond-duration">2</span> <span class="lilypond-articulation">\fermata
+  </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">4.</span><span class="lilypond-articulation">^</span><span class="lilypond-dynamic">\ff</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">sib</span><span class="lilypond-duration">2</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">la</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">sol la</span><span class="lilypond-duration">1</span> <span class="lilypond-articulation">\fermata
+  </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">2</span><span class="lilypond-articulation">^</span><span class="lilypond-dynamic">\mf</span><span class="lilypond-articulation">^</span><span class="lilypond-dynamic">\&gt;</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">fa mi</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span><span class="lilypond-dynamic">\!</span> <span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"||"</span><span class="lilypond-command function">\break
+  \cadenzaOn
+  </span><span class="lilypond-pitch">re</span> <span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-command function">\breathe</span> <span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve</span> <span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">do re mi fa</span> <span class="lilypond-beam">[</span><span class="lilypond-pitch">sol</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">\fermata
+  
+  </span><span class="lilypond-usercommand variable">\guidon</span><span class="lilypond-delimiter keyword">{</span><span class="lilypond-pitch">sol</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">mi</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span><span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"!"
+  </span><span class="lilypond-pitch">fa</span><span class="lilypond-slur">(</span><span class="lilypond-pitch">re</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">sol la sol</span><span class="lilypond-slur">)</span><span class="lilypond-delimiter keyword">} 
+  </span><span class="lilypond-command function">\bar</span><span class="lilypond-string string">"||" 
+  </span><span class="lilypond-usercommand variable">\guidonoff
+</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-duration">\breve 
+ 
+</span> <span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">mi</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-command function">\breathe 
+</span><span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve 
+</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2 
+</span> <span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">re</span> <span class="lilypond-duration">\breve 
+  </span><span class="lilypond-pitch">re</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2 
+ 
+</span> <span class="lilypond-usercommand variable">\coupe</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve 
+</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">do re  mi fa</span> <span class="lilypond-beam">[</span><span class="lilypond-pitch">sol</span><span class="lilypond-beam">]</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span><span class="lilypond-articulation">\fermata
+</span><span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"|."
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">alto</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">do</span><span class="lilypond-octave">'</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-usercommand variable">\global
+  </span><span class="lilypond-comment comment">% En avant la musique !
+  </span><span class="lilypond-pitch">do</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi do</span><span class="lilypond-duration">2</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">la</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">do</span><span class="lilypond-duration">1</span> <span class="lilypond-pitch">si</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">si</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">si re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">do
+  do</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">do</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">re re</span><span class="lilypond-duration">2.</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">dod</span><span class="lilypond-duration">1
+  </span><span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">re do</span><span class="lilypond-duration">4</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">sib</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">2
+  </span><span class="lilypond-pitch">sib</span><span class="lilypond-duration">\breve  </span><span class="lilypond-pitch">do</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sib sib</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la la la do</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sib</span> <span class="lilypond-command function">\bar</span> <span class="lilypond-string string">"||"
+    </span><span class="lilypond-usercommand variable">\guidon</span><span class="lilypond-delimiter keyword">{</span><span class="lilypond-pitch">sol</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">mi</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span><span class="lilypond-delimiter keyword">}
+    </span><span class="lilypond-pitch">fa</span><span class="lilypond-slur">(</span><span class="lilypond-pitch">re</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">sol la sol</span><span class="lilypond-slur">)
+    </span><span class="lilypond-usercommand variable">\guidonoff
+  </span><span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve  </span><span class="lilypond-pitch">do</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sib la</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sib</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">do</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">do</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">sib</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sib</span><span class="lilypond-duration">\breve
+  </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la la la do</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sib
+
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">tenor</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">do</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-usercommand variable">\global
+  </span><span class="lilypond-comment comment">% En avant la musique !
+  </span><span class="lilypond-pitch">do</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi sol</span><span class="lilypond-duration">2</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">1</span> <span class="lilypond-command function">\breathe</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol la</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">la</span> <span class="lilypond-articulation">\fermata
+  </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa sol</span><span class="lilypond-duration">2.</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi</span><span class="lilypond-duration">1</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">la sol</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">fa
+  fa</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-command function">\breathe</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">\breve  </span><span class="lilypond-pitch">mi</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">mi fa sol sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol
+    </span><span class="lilypond-usercommand variable">\guidon</span><span class="lilypond-delimiter keyword">{</span><span class="lilypond-pitch">sol</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">mi</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span><span class="lilypond-delimiter keyword">}
+    </span><span class="lilypond-pitch">fa</span><span class="lilypond-slur">(</span><span class="lilypond-pitch">re</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">sol la sol</span><span class="lilypond-slur">)
+    </span><span class="lilypond-usercommand variable">\guidonoff
+      </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-command function">\breathe</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">fa</span><span class="lilypond-duration">\breve
+      </span><span class="lilypond-pitch">mi</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">mi fa sol sol</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol
+
+
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">bass</span> = <span class="lilypond-command function">\relative</span> <span class="lilypond-pitch">do</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-usercommand variable">\global
+  </span><span class="lilypond-comment comment">% En avant la musique !
+</span><span class="lilypond-pitch">do</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi do</span><span class="lilypond-duration">1</span> <span class="lilypond-pitch">do mi</span><span class="lilypond-duration">2  </span><span class="lilypond-pitch">mi</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">mi re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">re sol</span><span class="lilypond-octave">,</span><span class="lilypond-duration">2</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">la</span><span class="lilypond-duration">4</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">sib la</span><span class="lilypond-duration">1</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">4</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">do</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">sib la do</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re
+sib</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sol sol</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la la la la</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol
+  </span><span class="lilypond-usercommand variable">\guidon</span><span class="lilypond-delimiter keyword">{</span><span class="lilypond-pitch">sol</span><span class="lilypond-octave">'</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">mi</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa
+  fa</span><span class="lilypond-slur">(</span><span class="lilypond-pitch">re</span><span class="lilypond-slur">)</span> <span class="lilypond-pitch">fa</span> <span class="lilypond-slur">(</span><span class="lilypond-pitch">sol la sol</span><span class="lilypond-slur">)</span><span class="lilypond-delimiter keyword">}
+  </span><span class="lilypond-usercommand variable">\guidonoff
+  </span><span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">re</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">do</span><span class="lilypond-duration">2
+  </span><span class="lilypond-pitch">sib</span><span class="lilypond-duration">\breve</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">4.</span> <span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">2</span> <span class="lilypond-pitch">sol</span><span class="lilypond-duration">\breve
+   </span><span class="lilypond-pitch">la</span><span class="lilypond-duration">8</span> <span class="lilypond-pitch">la la la la</span><span class="lilypond-duration">4</span> <span class="lilypond-pitch">sol
+
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">verse</span> = <span class="lilypond-lyricmode function">\lyricmode</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-comment comment">% Ajouter ici des paroles.
+</span><span class="lilypond-lyrictext">Pó -- pu -- le me -- us, quid fe -- ci ti -- bi?  
+Aut in quo con -- tri -- stá -- vi te?
+Res -- pón -- de mi -- hi.
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"Quia eduxi te de terra Æ"</span><span class="lilypond-duration">\breve</span> <span class="lilypond-lyrictext">-- gýp -- ti
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"parásti Crucem"</span> <span class="lilypond-lyrictext">Sal -- va -- tó -- ri tu -- o.
+</span><span class="lilypond-string string">"A"</span> <span class="lilypond-lyrictext">-- gi --</span> <span class="lilypond-string string">"os ..."
+"no"</span> <span class="lilypond-lyrictext">-- bis
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"Quia edúxi te per desértum quadragínta"</span> <span class="lilypond-lyrictext">an -- nis,
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"et manna cibávi"</span> <span class="lilypond-lyrictext">te,
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"et introdúxi in terram satis"</span> <span class="lilypond-lyrictext">óp -- ti --</span> <span class="lilypond-string string">"mam :"
+</span><span class="lilypond-keyword keyword">\once \override</span> <span class="lilypond-grob">LyricText</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-variable variable">self-alignment-X</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">LEFT
+</span><span class="lilypond-string string">"parásti Crucem"</span> <span class="lilypond-lyrictext">Sal -- va -- tó -- ri tu -- o.
+</span><span class="lilypond-delimiter keyword">}
+
+</span><span class="lilypond-uservariable">rehearsalMidi</span> = <span class="scheme-scheme">#
+</span><span class="scheme-delimiter">(</span><span class="scheme-function function">define-music-function
+</span> <span class="scheme-delimiter">(</span><span class="scheme-scheme">parser location name midiInstrument lyrics</span><span class="scheme-delimiter">) (</span><span class="scheme-keyword keyword">string? string?</span> <span class="scheme-function function">ly:music?</span><span class="scheme-delimiter">)
+</span> <span class="scheme-lilypond">#{
+   </span><span class="lilypond-command function">\unfoldRepeats</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+     </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"soprano"</span> <span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"soprano"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-usercommand variable">\soprano</span> <span class="lilypond-delimiter keyword">}
+     </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"alto"</span> <span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"alto"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-usercommand variable">\alto</span> <span class="lilypond-delimiter keyword">}
+     </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"tenor"</span> <span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"tenor"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-usercommand variable">\tenor</span> <span class="lilypond-delimiter keyword">}
+     </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> = <span class="lilypond-string string">"bass"</span> <span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"bass"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-usercommand variable">\bass</span> <span class="lilypond-delimiter keyword">}
+     </span><span class="lilypond-command function">\context</span> <span class="lilypond-context">Staff</span> = <span class="scheme-scheme">$name</span> <span class="lilypond-delimiter keyword">{
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Score</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">midiMinimumVolume</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">0.5
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Score</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">midiMaximumVolume</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">0.5
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Score</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">tempoWholesPerMinute</span> = <span class="scheme-scheme">#</span><span class="scheme-delimiter">(</span><span class="scheme-function function">ly:make-moment</span> <span class="scheme-number value">100 4</span><span class="scheme-delimiter">)
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Staff</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">midiMinimumVolume</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">0.8
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Staff</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">midiMaximumVolume</span> = <span class="scheme-scheme">#</span><span class="scheme-number value">1.0
+       </span><span class="lilypond-keyword keyword">\set</span> <span class="lilypond-context">Staff</span><span class="lilypond-delimiter keyword">.</span><span class="lilypond-property variable">midiInstrument</span> = <span class="scheme-scheme">$midiInstrument
+     </span><span class="lilypond-delimiter keyword">}
+     </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Lyrics</span> <span class="lilypond-keyword keyword">\with</span> <span class="lilypond-delimiter keyword">{
+       </span><span class="lilypond-property variable">alignBelowContext</span> = <span class="scheme-scheme">$name
+     </span><span class="lilypond-delimiter keyword">}</span> <span class="lilypond-lyricmode function">\lyricsto</span> <span class="scheme-scheme">$name $lyrics
+   </span><span class="lilypond-delimiter keyword">&gt;&gt;
+</span> <span class="scheme-lilypond">#}</span><span class="scheme-delimiter">)
+
+</span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">ChoirStaff</span> <span class="lilypond-delimiter keyword">&lt;&lt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> <span class="lilypond-keyword keyword">\with</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-property variable">midiInstrument</span> = <span class="lilypond-string string">"choir aahs"
+      </span><span class="lilypond-property variable">instrumentName</span> = <span class="lilypond-markup function">\markup \center-column</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-string string">"Soprano" "Alto"</span> <span class="lilypond-delimiter keyword">}
+    } &lt;&lt;
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"soprano"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-command function">\voiceOne</span> <span class="lilypond-usercommand variable">\soprano</span> <span class="lilypond-delimiter keyword">}
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"alto"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-command function">\voiceTwo</span> <span class="lilypond-usercommand variable">\alto</span> <span class="lilypond-delimiter keyword">}
+    &gt;&gt;
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Lyrics</span> <span class="lilypond-keyword keyword">\with</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-keyword keyword">\override</span> <span class="lilypond-grob">VerticalAxisGroup</span> <span class="scheme-scheme">#'staff-affinity</span> = <span class="scheme-scheme">#</span><span class="scheme-constant variable">CENTER
+    </span><span class="lilypond-delimiter keyword">}</span> <span class="lilypond-lyricmode function">\lyricsto</span> <span class="lilypond-string string">"soprano"</span> <span class="lilypond-usercommand variable">\verse
+    </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Staff</span> <span class="lilypond-keyword keyword">\with</span> <span class="lilypond-delimiter keyword">{
+      </span><span class="lilypond-property variable">midiInstrument</span> = <span class="lilypond-string string">"choir aahs"
+      </span><span class="lilypond-property variable">instrumentName</span> = <span class="lilypond-markup function">\markup \center-column</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-string string">"Ténor" "Basse"</span> <span class="lilypond-delimiter keyword">}
+    } &lt;&lt;
+      </span><span class="lilypond-command function">\clef</span> <span class="lilypond-specifier variable">bass
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"tenor"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-command function">\voiceOne</span> <span class="lilypond-usercommand variable">\tenor</span> <span class="lilypond-delimiter keyword">}
+      </span><span class="lilypond-command function">\new</span> <span class="lilypond-context">Voice</span> = <span class="lilypond-string string">"bass"</span> <span class="lilypond-delimiter keyword">{</span> <span class="lilypond-command function">\voiceTwo</span> <span class="lilypond-usercommand variable">\bass</span> <span class="lilypond-delimiter keyword">}
+    &gt;&gt;
+  &gt;&gt;
+  </span><span class="lilypond-keyword keyword">\layout</span> <span class="lilypond-delimiter keyword">{ }
+  </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-command function">\tempo</span> <span class="lilypond-duration">4</span>=<span class="lilypond-value value">100
+  </span><span class="lilypond-delimiter keyword">}
+}
+
+</span><span class="lilypond-comment comment">% Fichiers MIDI pour répétitions :
+</span><span class="lilypond-keyword keyword">\book</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\bookOutputSuffix</span> <span class="lilypond-string string">"soprano"
+  </span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-usercommand variable">\rehearsalMidi</span> <span class="lilypond-string string">"soprano" "soprano sax"</span> <span class="lilypond-usercommand variable">\verse
+    </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{ }
+  }
+}
+
+</span><span class="lilypond-keyword keyword">\book</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\bookOutputSuffix</span> <span class="lilypond-string string">"alto"
+  </span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-usercommand variable">\rehearsalMidi</span> <span class="lilypond-string string">"alto" "soprano sax"</span> <span class="lilypond-usercommand variable">\verse
+    </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{ }
+  }
+}
+
+</span><span class="lilypond-keyword keyword">\book</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\bookOutputSuffix</span> <span class="lilypond-string string">"tenor"
+  </span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-usercommand variable">\rehearsalMidi</span> <span class="lilypond-string string">"tenor" "tenor sax"</span> <span class="lilypond-usercommand variable">\verse
+    </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{ }
+  }
+}
+
+</span><span class="lilypond-keyword keyword">\book</span> <span class="lilypond-delimiter keyword">{
+  </span><span class="lilypond-command function">\bookOutputSuffix</span> <span class="lilypond-string string">"bass"
+  </span><span class="lilypond-keyword keyword">\score</span> <span class="lilypond-delimiter keyword">{
+    </span><span class="lilypond-usercommand variable">\rehearsalMidi</span> <span class="lilypond-string string">"bass" "tenor sax"</span> <span class="lilypond-usercommand variable">\verse
+    </span><span class="lilypond-keyword keyword">\midi</span> <span class="lilypond-delimiter keyword">{ }
+  }
+}
+
+</span></pre></body>
+</html>
